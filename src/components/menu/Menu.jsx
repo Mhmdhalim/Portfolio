@@ -1,12 +1,7 @@
-import React from 'react'
-import { Link } from "react-router-dom";
-import { useState } from 'react';
-
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faBars,
-    faTimes,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import './menu.css';
 
 const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,21 +10,22 @@ const Menu = () => {
     };
 
     return (
-        <div className='block sm:hidden fixed w-full '> 
-            <div className='cursor-pointer block sm:hidden ' style={{fontSize: '30px', color: 'black'}}>
+        <aside className=' fixed'>
+            <div className='cursor-pointer' style={{ fontSize: '30px', color: 'black' }}>
                 <FontAwesomeIcon
-                icon={isOpen ? faTimes : faBars}
-                className=" cursor-pointer"
-                onClick={toggleMenu}
+                    icon={isOpen ? faTimes : faBars}
+                    onClick={toggleMenu}
+                    className={`icon ${isOpen ? ' rotate' : ''}`}
                 />
             </div>
-            {isOpen && (
-                <div className='humberger bg-white h-60 w-full flex justify-center items-center'>
-                    sdv
-                </div>
-            )}
-        </div>
-    )
+            <div className={`hamburger ${isOpen ? 'open' : ''}`}>
+                {isOpen && <div >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem ut sunt enim architecto in ab, deleniti similique, at asperiores est praesentium. Doloremque quisquam maiores molestias magni aliquid nam possimus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quam voluptate, quia ad ea culpa eaque sit similique accusamus beatae corrupti, fugit error consequuntur? Molestiae ab esse reiciendis nobis corrupti.
+                </div>}
+            </div>
+        </aside>
+    );
 }
 
-export default Menu
+export default Menu;

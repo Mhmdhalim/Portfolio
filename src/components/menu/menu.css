@@ -1,0 +1,76 @@
+aside{
+    z-index: 10;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.icon{
+    font-size: 30px;
+    color: #000;
+}
+
+.hamburger {
+    width: 100%;
+    transition: transform .5s ease;
+}
+
+.hamburger div {
+    padding-left: 10px;
+    color: black;
+    width: 107%;
+    transition: transform .5s ease;
+}
+
+.hamburger.open {
+    --tw-translate-x: -8%;
+    transform: translate(-100%, var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (max-width: 624px) {
+    aside{
+        position: fixed;
+        top: -5px;
+        padding: 20px;
+    }
+}
+@media (min-width: 625px) {
+    aside {
+        position: fixed;
+        left: -230px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 20px;
+        width: 300px;
+    }
+    .hamburger div {
+        position: absolute;
+        left: 300px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: black;
+        width: -107%;
+        transition: transform .5s ease;
+    }
+    .hamburger {
+        opacity: 0; /* Start hidden */
+        transition: transform 0.5s ease, opacity 0.5s ease; /* Transition for smooth animation */
+        transform: translate(-100%, 0); /* Off-screen to the right when closed */
+    }
+
+    .hamburger.open {
+        opacity: 1; /* Fully visible when open */
+        transform: translate(0, 0); /* Translate to its normal position when open */
+    }
+
+}
+
+.icon{
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+.icon.rotate:hover{
+    transform: rotate(360deg);
+}

@@ -4,6 +4,7 @@ import Hello from './components/hello/Hello'
 import About from './components/about/About'
 import Portfolio from './components/portfolio/Portfolio'
 import Footer from './components/footer/Footer'
+import Menu from "./components/menu/Menu";
 
 import './style/tailoutput.css'
 
@@ -17,6 +18,7 @@ const App = () => {
     return (
         <div className={`h-lvh ${!background ? "bg-white" : "bg-[#27272A] text-white"}`}>
             <Navbar toggleBackground={toggleBackground} />
+            <Menu />
             <Hello />
             <About />
             <Portfolio />
