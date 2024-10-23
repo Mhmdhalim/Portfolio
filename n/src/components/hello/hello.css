@@ -1,0 +1,25 @@
+.hello{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    height: 600px;
+    margin-top: -20px;
+}
+.box_hello{
+    background-color: #f87171;
+    height: 100%;
+}
+
+.dot {
+    transition: all .5s ease;
+}
+
+.dot:hover {
+    color: #fff;
+    text-shadow:
+        0 0 5px #00FFFF,
+        0 0 10px #00FFFF,
+        0 0 20px #00FFFF,
+        0 0 40px #00B3B3,
+        0 0 80px #008080;
+}

@@ -1,0 +1,12 @@
+.about {
+    display: grid;
+    grid-template-columns: 30% 50% ;
+    gap: 20%;
+    height: 600px;
+    margin-top: -20px;
+}
+
+.box_portfolio {
+    background-color: #0ea5e9;
+    height: 100%;
+}
