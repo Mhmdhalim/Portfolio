@@ -1,0 +1,38 @@
+[
+    {
+        "title": "E-Commerce App",
+        "description": "A mock shopping cart using Fake Store API",
+        "img": "./assets/E.png",
+        "skills": [
+            "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+            "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+            "https://img.shields.io/badge/scss-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+        ],
+        "repoLink": "https://github.com/Mhmdhalim/E-Commerce?tab=readme-ov-file",
+        "demoLink": "https://bigcommercee.netlify.app/"
+    },
+    {
+        "title": "Weather App",
+        "description": "A weather application using a weather API",
+        "img": "./assets/E.png",
+        "skills": [
+            "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+            "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+            "https://img.shields.io/badge/scss-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+        ],
+        "repoLink": "repo link",
+        "demoLink": "demo link"
+    },
+    {
+        "title": "Tic-tac-toe App",
+        "description": "A classic tic-tac-toe game",
+        "img": "./assets/E.png",
+        "skills": [
+            "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+            "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+            "https://img.shields.io/badge/scss-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+        ],
+        "repoLink": "repo link",
+        "demoLink": "demo link"
+    }
+]

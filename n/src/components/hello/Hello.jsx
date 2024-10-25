@@ -1,7 +1,6 @@
 import React from 'react'
 import './hello.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 const hello = () => {
     return (
         <div id='hello' className="hello p-5">
