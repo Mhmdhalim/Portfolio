@@ -1,0 +1,24 @@
+.colores{
+    display: flex;
+    gap: 20px;
+}
+
+.dot {
+    transition: all .5s ease;
+}
+
+.dot:hover {
+    color: #fff;
+    text-shadow:
+        0 0 5px #00FFFF,
+        0 0 10px #00FFFF,
+        0 0 20px #00FFFF,
+        0 0 40px #00B3B3,
+        0 0 80px #008080;
+}
+
+@media (max-width: 700px) {
+    .colores{
+        display: none;
+    }
+}

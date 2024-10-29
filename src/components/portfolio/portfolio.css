@@ -1,0 +1,53 @@
+.portfolio {
+    grid-template-columns: 75% 20%;
+    gap: 5%;
+    height: 600px;
+    margin-top: -20px;
+}
+
+.box_portfolio {
+    height: 100%;
+}
+.image_class {
+    filter: brightness(60%) ;
+    opacity: 0.9;
+}
+@media (max-width: 600px) {
+    .image_class{
+        filter: brightness(90%);
+    }
+}
+.image_class.active {
+    filter: brightness(80%) ;
+    opacity: 1.1;
+}
+
+
+.active/* In your portfolio.css */
+.image-container {
+    position: relative;
+}
+
+.navigation-buttons-outside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    transform: translateY(-500%);
+}
+
+.arrow-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+

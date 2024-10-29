@@ -1,0 +1,36 @@
+.hello{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    height: 600px;
+    margin-top: -20px;
+}
+.box_hello{
+    background-color: #f87171;
+    height: 100%;
+}
+/* hello.css */
+@keyframes slideUp {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.box_hello .animate {
+    animation: slideUp 0.5s ease forwards;
+    /* Adjust duration and timing as needed */
+}
+
+@media (max-width: 500px) {
+    .box_hello p{
+        left: 50%;
+        top: 30%;
+        font-size: 100px;
+    }
+}

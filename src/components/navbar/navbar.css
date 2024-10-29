@@ -1,0 +1,27 @@
+.toggleBcakground {
+  border-radius: 0.375rem;
+  aspect-ratio: 2;
+  width: 50px;
+  height: 26px;
+  transition: all 1s ease;
+  padding: 1px;
+}
+.toggleBcakground_ball {
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+  aspect-ratio: 1/1;
+  height: calc(100% - 4px);
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241, 245, 249);
+  background-color: rgba(241, 245, 249, var(--tw-bg-opacity));
+  transition: transform 750ms ease;
+}
+
+.toggleBcakground:hover {
+  background-color: rgb(252, 210, 217);
+}
+
+.toggleBcakground_ball.dark {
+  transform: translateX(100%);
+}
