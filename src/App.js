@@ -4,7 +4,7 @@ import Hello from "./components/hello/Hello";
 import About from "./components/about/About";
 import Portfolio from "./components/portfolio/Portfolio";
 import Footer from "./components/footer/Footer";
-import Menu from "./components/menu/Menu";
+
 
 import "./style/tailoutput.css";
 import "./App.css"
