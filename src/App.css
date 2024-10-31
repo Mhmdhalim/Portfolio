@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 100px repeat(3, 600px) 100px;
-  overflow-x: hidden;
+
 }
 
 @media (max-width:1110px) {
