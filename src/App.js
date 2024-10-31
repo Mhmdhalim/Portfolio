@@ -27,7 +27,7 @@ const App = () => {
       }`}
     >
       <header
-        className={`${
+        className={` ${
           !background ? "bg-white text-[#27272A]" : "bg-[#27272A] text-white"
         } fixed top-0 p-7 pb-4 w-full z-40  flex justify-center items-center`}
       >
@@ -37,7 +37,7 @@ const App = () => {
         <Colores />
       </div>
 
-      <div className="w-full mt-12 p-7">
+      <div className="w-full mt-16 p-7">
         <Hello toggleBackground={background} />
         <About toggleBackground={background} />
         <Portfolio toggleBackground={background} />

@@ -11,9 +11,10 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 100px repeat(3, 600px) 100px;
+  overflow-x: hidden;
 }
 
-@media (min-width:421px) {
+@media (max-width:1110px) {
   .app ,body{
       display: flex;
       flex-direction: column;
