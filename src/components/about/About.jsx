@@ -95,7 +95,7 @@ const About = (props) => {
                         <span>frontend developer</span>
                     </p>
                 </div>
-                <div className="sec_section py-8 border-y-2 border-[#facc15]">
+                <div className="sec_section py-8 border-y-2 border-[#facc15] w-[95%]">
                     <h2 className="uppercase font-bold text-2xl pb-4">
                     hello
                     <span
@@ -114,7 +114,7 @@ const About = (props) => {
                         !
                     </span>
                     </h2>
-                    <p className="text-[14px] text-justify w-[95%]" style={{textWrap: "pretty"}}>
+                    <p className="text-[14px] text-justify " style={{textWrap: "pretty"}}>
                     As an enthusiastic web developer with a passion for coding and
                     problem-solving, I have honed my skills through rigorous online
                     courses such as Harvard's CS50x and The Odin Project. Though I am
