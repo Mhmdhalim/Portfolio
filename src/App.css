@@ -12,10 +12,20 @@
   grid-template-columns: auto;
   grid-template-rows: 100px repeat(3, 600px) 100px;
 }
+
 @media (max-width:1100px) {
   .app ,body{
       display: flex;
       flex-direction: column;
+      height: 2750px;
+  }
+}
+
+@media (max-width:420px) {
+  .app ,body{
+      display: flex;
+      flex-direction: column;
+      width: 400px;
       height: 2750px;
   }
 }

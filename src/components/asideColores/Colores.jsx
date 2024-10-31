@@ -24,7 +24,7 @@ const Colores = (props) => {
         };
     }, []);
     return (
-        <div className="z-20 colores fixed gap-5 right-2 top-1/2 transform -translate-y-1/2 p-4">
+        <div className="z-20 colores fixed gap-5 right-2 top-1/2 transform -translate-y-1/2 p-4 flex flex-col">
         <a
                 className={`${isScaled === 'red' && "scale-150"} block  dot bg-[#f87171] hover:scale-125 rounded-full cursor-pointer w-2 h-2`}
             href="#hello"
@@ -32,13 +32,13 @@ const Colores = (props) => {
 
         </a>
         <a
-                className={`${isScaled === 'yellow' && "scale-150"} block mt-6 dot bg-[#facc15] hover:scale-125 rounded-full cursor-pointer w-2 h-2`}
+                className={`${isScaled === 'yellow' && "scale-150"} block  dot bg-[#facc15] hover:scale-125 rounded-full cursor-pointer w-2 h-2`}
             href="#about"
         >
             
         </a>
         <a
-                className={`${isScaled === 'blue' && "scale-150"} block dot mt-12 bg-[#0ea5e9] hover:scale-125 rounded-full cursor-pointer w-2 h-2`}
+                className={`${isScaled === 'blue' && "scale-150"} block dot  bg-[#0ea5e9] hover:scale-125 rounded-full cursor-pointer w-2 h-2`}
             href="#portfolio"
         >
         </a>

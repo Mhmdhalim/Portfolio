@@ -9,10 +9,10 @@
     background-color: #f87171;
     height: 100%;
 }
-/* hello.css */
+
 @keyframes slideUp {
     0% {
-        transform: translateY(50%);
+        transform: translateY(0%);
         opacity: 0;
     }
 
@@ -30,7 +30,6 @@
 @media (max-width: 500px) {
     .box_hello p{
         left: 50%;
-        top: 30%;
         font-size: 100px;
     }
 }

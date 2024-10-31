@@ -15,7 +15,7 @@ const Navbar = (props) => {
             <div>
                 <img src={m} alt="M" className='w-8 z-20' />
             </div>
-            <button onClick={toggle} className={`toggleBcakground hidden sm:block bg-black`}>
+            <button onClick={toggle} className={`toggleBcakground bg-black`}>
                 <div className={`toggleBcakground_ball ${dark ? '' : 'dark'}`}></div>
             </button>
         </nav>

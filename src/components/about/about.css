@@ -53,7 +53,7 @@
     }
     
     .btn.slide-left {
-        right: 860px;
+        right: 920px;
     }
     .btn.slide-right{
         right: 150px;
@@ -62,7 +62,7 @@
         opacity: 1;
         visibility: visible;
         width: 700px;
-        right: 100px;
+        right: 200px;
     }
 
     .hidden-div {
@@ -70,7 +70,7 @@
     }
 
     .hidden-div.slide-left {
-        transform: translateX(-400px);
+        transform: translateX(-450px);
     }
 }
 
