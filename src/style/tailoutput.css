@@ -613,6 +613,14 @@ video {
   top: 40%;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -711,6 +719,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .-translate-y-1\/2 {
@@ -885,6 +897,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1028,6 +1050,10 @@ video {
 
   .sm\:w-\[500px\] {
     width: 500px;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:bg-\[\#27272A\] {

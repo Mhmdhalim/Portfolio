@@ -22,21 +22,23 @@ const App = () => {
 
   return (
     <div
-      className={`app relative ${
+      className={`app p-7 relative ${
         !background ? "bg-white text-[#27272A]" : "bg-[#27272A] text-white"
       }`}
     >
-      <header>
+      <header className="absolute top-0">
         <Navbar toggleBackground={toggleBackground} bg={background} />
       </header>
       <div className="absolute right-5 top-32">
         <Colores />
       </div>
-    
+
       <Hello toggleBackground={background} />
       <About toggleBackground={background} />
       <Portfolio toggleBackground={background} />
-      <Footer toggleBackground={background} />
+      <footer className="absolute bottom-0">
+        <Footer toggleBackground={background} />
+      </footer>
     </div>
   );
 };

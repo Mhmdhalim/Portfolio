@@ -19,7 +19,7 @@ const Portfolio = (props) => {
     const currentProject = data[currentIndex];
     return (
         <>
-        <div id="portfolio" className="portfolio p-7 hidden lg:grid">
+        <div id="portfolio" className="portfolio py-7 hidden lg:grid">
             <div className={`flex flex-col justify-center items-center  text-white ${!props.toggleBackground ? "bg-[#0ea5e9]" : ""}`}>
                 <div className="flex justify-center items-center relative image-container p-2">
                 <img
@@ -96,7 +96,7 @@ const Portfolio = (props) => {
             </div>
             </div>
             {/* in small screen */}
-            <div className="p-7 lg:hidden flex flex-col justify-center items-center ">
+            <div className="py-7 lg:hidden flex flex-col justify-center items-center ">
                 <h1 className="head_project uppercase text-3xl font-bold self-start ">projects<span className={`${props.toggleBackground ? "text-[#0ea5e9]" : "text-white"}`}>.</span></h1>
                 {
                     data.map((project, index) => (
@@ -144,9 +144,7 @@ const Portfolio = (props) => {
                         </div>
                     ))
                 }
-                <div className={`sm:hidden py-10 ${props.toggleBackground ? "bg-[#27272A]" : "bg-white text-black" }`}>
-                    <div className='flex justify-center items-center gap-1' ><FaCopyright /> 2024 <a href="https://github.com/Mhmdhalim" className='underline'>M</a></div>
-                </div>
+              
             </div>
         </>
         

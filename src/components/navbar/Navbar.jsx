@@ -11,7 +11,7 @@ const Navbar = (props) => {
         props.toggleBackground()
     }
     return (
-        <nav className={`navbar z-40 flex justify-between p-7 fixed w-full ${props.bg ? "bg-[#27272A]" : "bg-white text-black" }`}>
+        <nav className={`navbar z-40 flex justify-between p-7 fixed w-[400px] sm:w-full ${props.bg ? "bg-[#27272A]" : "bg-white text-black" }`}>
             <div>
                 <img src={m} alt="M" className='w-8 z-20' />
             </div>

@@ -15,7 +15,7 @@ const About = (props) => {
         setShow(!show)
     }
     return (
-        <div id="about" className="about p-7">
+        <div id="about" className="about py-7">
             <button onClick={showHiddenSection} className={`btn-div z-10 ${show ? "slide-left" : "slide-right"} btn hidden lg:block p-10  font-bold text-2xl absolute top-[38%]`}>
                 <div className={`${show ? "hidden" : ""} -rotate-90 flex flex-col items-center justify-center cursor-pointer`}>
                     <p>More</p>
