@@ -29,7 +29,7 @@ const App = () => {
       <header
         className={` ${
           !background ? "bg-white text-[#27272A]" : "bg-[#27272A] text-white"
-        } fixed top-0 p-7 pb-4 w-full z-40  flex justify-center items-center`}
+        } fixed top-0 p-7 pb-4 z-40 w-full  flex justify-center items-center`}
       >
         <Navbar toggleBackground={toggleBackground} bg={background} />
       </header>
@@ -43,7 +43,7 @@ const App = () => {
         <Portfolio toggleBackground={background} />
       </div>
 
-      <footer className="absolute bottom-0">
+      <footer className="">
         <Footer toggleBackground={background} />
       </footer>
     </div>

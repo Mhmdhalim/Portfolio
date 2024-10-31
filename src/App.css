@@ -4,14 +4,16 @@
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 
-.app, body{
+.app{
   height: 100vh;
-  width: 100%;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 100px repeat(3, 600px) 100px;
-
+  
 }
 
 @media (max-width:1110px) {
