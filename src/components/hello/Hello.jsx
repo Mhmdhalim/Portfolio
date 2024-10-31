@@ -12,7 +12,7 @@ const Hello = () => {
         <div id="hello" className="hello ">
         <div className="box_hello relative">
             <p
-            className={`uppercase text-9xl font-extrabold absolute left-[70%] md:left-[88%] top-[40%] sm:top-[20%] ${
+            className={`uppercase text-9xl font-extrabold absolute left-[70%] md:left-[88%] top-[30%] sm:top-[20%] ${
                 animate ? "animate" : ""
             }`}
             >
