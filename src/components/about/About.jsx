@@ -114,7 +114,7 @@ const About = (props) => {
                         !
                     </span>
                     </h2>
-                    <p className="text-[14px] text-justify" style={{textWrap: "pretty"}}>
+                    <p className="text-[14px] text-justify w-[95%]" style={{textWrap: "pretty"}}>
                     As an enthusiastic web developer with a passion for coding and
                     problem-solving, I have honed my skills through rigorous online
                     courses such as Harvard's CS50x and The Odin Project. Though I am

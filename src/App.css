@@ -13,7 +13,7 @@
   grid-template-rows: 100px repeat(3, 600px) 100px;
 }
 
-@media (max-width:1100px) {
+@media (min-width:421px) {
   .app ,body{
       display: flex;
       flex-direction: column;
@@ -26,7 +26,7 @@
       display: flex;
       flex-direction: column;
       width: 400px;
-      height: 2750px;
+      height: 2650px;
       grid-template-columns: 400px;
   }
 }
