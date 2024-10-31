@@ -3,7 +3,6 @@ import "./portfolio.css";
 import { FaGithub, FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Import arrow icons
 import data from "./data.json";
 import img1 from "./assets/E.png";
-import { FaCopyright } from "react-icons/fa";
 
 const Portfolio = (props) => {
     const [currentIndex, setCurrentIndex] = useState(0);
