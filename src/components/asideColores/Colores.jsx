@@ -24,7 +24,7 @@ const Colores = (props) => {
         };
     }, []);
     return (
-        <div className="z-20 colores fixed gap-5 right-2 top-1/2 transform -translate-y-1/2 p-4 flex flex-col">
+        <div className="z-20 colores fixed gap-5 right-0 top-1/2 transform -translate-y-1/2 p-4 px-3 flex flex-col">
         <a
                 className={`${isScaled === 'red' && "scale-150"} block  dot bg-[#f87171] hover:scale-125 rounded-full cursor-pointer w-2 h-2`}
             href="#hello"

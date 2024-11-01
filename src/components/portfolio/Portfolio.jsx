@@ -3,6 +3,8 @@ import "./portfolio.css";
 import { FaGithub, FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Import arrow icons
 import data from "./data.json";
 import img1 from "./assets/E.png";
+import iconblack from "./assets/e875fb0a158ceec2b831.png"
+import iconwhite from "./assets/ef74e2761c3898237855.png"
 
 const Portfolio = (props) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,8 +21,8 @@ const Portfolio = (props) => {
     return (
         <>
         <div id="portfolio" className="portfolio py-7 hidden lg:grid">
-            <div className={`flex flex-col justify-center items-center  text-white ${!props.toggleBackground ? "bg-[#0ea5e9]" : ""}`}>
-                <div className="flex justify-center items-center relative image-container p-2">
+            <div className={`flex flex-col justify-center items-center relative text-white ${!props.toggleBackground ? "bg-[#0ea5e9]" : ""}`}>
+                <div className="flex justify-center items-center relative image-container ">
                 <img
                     src={
                     (currentIndex === 0 && img1) ||
@@ -30,16 +32,16 @@ const Portfolio = (props) => {
                     alt={currentProject.title}
                     className={`w-[66%] md:w-[62%] image_class mt-12 ${!props.toggleBackground ? "active" : ""}`}
                 />
-                <span className="num_of_video xl:text-5xl text-4xl font-extrabold absolute top-9 lg:left-36 lg:py-3.5 lg:px-2.5 xl:left-56 p-4">
+                <span className="num_of_video xl:text-4xl text-3xl font-extrabold absolute top-9 lg:left-36 lg:py-3.5 lg:px-2.5 xl:left-48 xl:px-5  p-4">
                     0{currentIndex + 1}
                 </span>
                 </div>
-                <div className="z-10 absolute flex flex-col justify-center mb-20 items-center gap-2 xl:gap-7 xl:mb-5">
-                <p className="z-10 font-extrabold lg:text-xl xl:text-2xl">{currentProject.title}</p>
-                <p className="z-10 font-extrabold lg:text-xl xl:text-2xl">
+                <div className="z-10 absolute flex flex-col justify-center items-center gap-3  ">
+                <p className="z-10 font-extrabold lg:text-xl xl:text-xl">{currentProject.title}</p>
+                <p className="z-10 font-extrabold lg:text-lg xl:text-lg">
                     {currentProject.description}
                 </p>
-                <div className="flex flex-wrap ">
+                <div className="flex flex-wrap w-full justify-center">
                     {currentProject.skills.map((skill, skillIndex) => (
                     <img
                         key={skillIndex}
@@ -52,19 +54,21 @@ const Portfolio = (props) => {
                 <div className="flex gap-5 text-2xl">
                     <a
                     href={currentProject.repoLink}
-                    className="underline text-xl"
+                    className="flex justify-center items-center gap-2 text-sm font-bold hover:scale-125 transition-all duration-300 ease-linear"
                     target="_blank"
                     rel="noopener noreferrer"
                     >
-                    Repo
+                                <p>Repo</p>
+                                <img src={iconwhite} alt="" className="w-5 h-5" />
                     </a>
                     <a
                     href={currentProject.demoLink}
-                    className="underline text-xl"
+                    className="flex justify-center items-center gap-2 text-sm font-bold hover:scale-125 transition-all duration-300 ease-linear"
                     target="_blank"
                     rel="noopener noreferrer"
                     >
-                    Demo
+                    <p>Demo</p>
+                    <img src={iconwhite} alt="" className="w-5 h-5" />
                     </a>
                 </div>
                 </div>
@@ -81,7 +85,7 @@ const Portfolio = (props) => {
 
                 <div className="flex items-center justify-center gap-2 ">
                 More on{" "}
-                <a href="https://github.com" className="underline">
+                <a href="https://github.com" className="underline hover:scale-110 transition-all duration-300 ease-linear">
                     GitHub
                 </a>
                 <FaGithub />
@@ -95,12 +99,12 @@ const Portfolio = (props) => {
             </div>
             </div>
             {/* in small screen */}
-            <div className="py-7 lg:hidden flex flex-col justify-center items-center ">
+            <div className="py-7 lg:hidden flex flex-col justify-center items-center pt-16">
                 <h1 className="head_project uppercase text-3xl font-bold self-start ">projects<span className={`${props.toggleBackground ? "text-[#0ea5e9]" : "text-white"}`}>.</span></h1>
                 {
                     data.map((project, index) => (
                         <div className="flex flex-col w-[360px] justify-center items-center text-justify" style={{textWrap: "pretty"}}>
-                            <div className="flex justify-center items-center relative image-container p-2">
+                            <div className="flex justify-center items-center relative image-container mb-4">
                                 <img
                                     src={
                                     (index === 0 && img1) ||
@@ -110,34 +114,36 @@ const Portfolio = (props) => {
                                     alt={project.title}
                                     className={`w-full image_class mt-12 ${!props.toggleBackground ? "active" : ""}`}
                                 />
-                                <span className="num_of_video w-full text-3xl font-extrabold absolute top-9 left-0 p-4 px-2">
+                                <span className="num_of_video w-full text-3xl font-extrabold absolute top-11 left-1 ">
                                     0{index + 1}
                                 </span>
                             </div>
-                            <h1 className="text-xl font-bold py-1">{project.title}</h1>
-                            <p className="text-sm font-bold py-2">{project.description}</p>
-                            <div className="flex py-4">
+                            <h1 className="text-xl font-bold ">{project.title}</h1>
+                            <p className="text-sm font-bold ">{project.description}</p>
+                            <div className="flex justify-center items-center w-full py-2">
                                 {
-                                project.skills.map(skill => <img src={skill} alt="" />)
+                                project.skills.map(skill => <img src={skill} alt="" className="h-6" />)
 
                             }
                             </div>
                             <div className="flex gap-5 text-xl">
                                 <a
                                 href={project.repoLink}
-                                className="underline text-xl"
+                                className="flex justify-center items-center gap-2 text-sm font-bold hover:scale-125 transition-all duration-300 ease-linear"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >
-                                Repo
+                                    <p>Repo</p>
+                                    <img src={iconwhite} alt="" className="w-4 h-4"/>
                                 </a>
                                 <a
                                 href={project.demoLink}
-                                className="underline text-xl"
+                                className="flex justify-center items-center gap-2 text-sm font-bold hover:scale-125 transition-all duration-300 ease-linear"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >
-                                Demo
+                                    <p>Demo</p>
+                                    <img src={iconwhite} alt="" className="w-4 h-4" />
                                 </a>
                             </div>
                         </div>
