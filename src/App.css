@@ -1,61 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
 
-.app{
-  height: 100vh;
+.app {
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 100px repeat(3, 600px) 100px;
-  
+  grid-template-rows: auto 1fr auto;
 }
 
-@media (max-width:1110px) {
-  .app ,body{
-      display: flex;
-      flex-direction: column;
-      height: 2650px;
-  }
+/* General styling for the header, main sections, and footer */
+header,
+footer {
+  padding: 1.5rem;
 }
 
-@media (max-width:420px) {
-  .app ,body{
-      display: flex;
-      flex-direction: column;
-      width: 400px;
-      height: 2650px;
-      grid-template-columns: 400px;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
-body{
-  background-color: #27272A;
-}
-body.active{
-  background-color: white;
-}
-/* styles.css */
-
-/* Customize scrollbar for Webkit browsers */
+/* Scrollbar customization */
 ::-webkit-scrollbar {
   width: 8px;
-  /* Width of the scrollbar */
 }
-
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, #f87171, #facc15, #0ea5e9);
-  /* Gradient for the scrollbar handle */
-  /* Rounded corners */
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #f05555, #facc15, #0ea5e9);
-  /* Darker gradient on hover */
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .app {
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: auto;
+  }
+}
+
+/* Medium screens */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .app {
+    grid-template-rows: 80px 1fr 80px;
+  }
+
+  header,
+  footer {
+    padding: 1.25rem;
+  }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+  .app {
+    grid-template-rows: 70px 1fr 70px;
+  }
+
+  header,
+  footer {
+    padding: 1rem;
+  }
+
+  .app,
+  body {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 420px) {
+
+  .app,
+  body {
+    width: 100%;
+    height: auto;
+    grid-template-columns: 100%;
+  }
+
+  header,
+  footer {
+    padding: 0.75rem;
+  }
+}
+
+body {
+  background-color: #27272A;
+}
+
+body.active {
+  background-color: white;
 }
