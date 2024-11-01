@@ -28,7 +28,7 @@
     animation: slideUp 0.5s ease forwards;
 }
 
-@media (min-width: 1111px) {
+@media (min-width: 1020px) {
     .bio {
         opacity: 0;
         visibility: hidden;

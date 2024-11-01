@@ -5,29 +5,42 @@
     margin-top: -20px;
 }
 
-.box_portfolio {
-    height: 100%;
-}
 .image_class {
-    filter: brightness(60%) ;
+    filter: brightness(60%);
     opacity: 0.9;
 }
-@media (max-width: 600px) {
-    .image_class{
-        filter: brightness(90%);
-    }
-}
+
 .image_class.active {
-    filter: brightness(80%) ;
+    filter: brightness(80%);
     opacity: 1.1;
 }
 
-
-.active/* In your portfolio.css */
 .image-container {
     position: relative;
 }
+/* Countdown bar centered, shrinking from both sides */
+.countdown-bar {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    left: 50%;
+    height: 5px;
+    transform: translateX(-50%);
+    animation: countdown-center 7s linear;
+}
 
+
+@keyframes countdown-center {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 0px;
+    }
+}
+
+/* Navigation buttons */
 .navigation-buttons-outside {
     display: flex;
     justify-content: space-between;
@@ -41,6 +54,7 @@
     color: white;
     border: none;
     padding: 10px;
+    margin-top: -10px;
     cursor: pointer;
     border-radius: 50%;
     font-size: 1.5rem;
@@ -51,3 +65,24 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.indicator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0px 2px;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: background-color 0.3s ease, transform .5s ease;
+}
+
+.indicator.active {
+    background-color: #0ea5e9;
+    transform: scale(1.4);
+}

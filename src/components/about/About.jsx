@@ -15,7 +15,7 @@ const About = (props) => {
         setShow(!show)
     }
     return (
-        <div id="about" className="about py-7">
+        <div id="about" className="about py-7 md:h-[600px]">
             <button onClick={showHiddenSection} className={`btn-div z-10 ${show ? "slide-left" : "slide-right"} btn hidden lg:block p-10  font-bold text-2xl absolute top-[38%]`}>
                 <div className={`${show ? "hidden" : ""} -rotate-90 flex flex-col items-center justify-center cursor-pointer`}>
                     <p>More</p>
@@ -34,43 +34,43 @@ const About = (props) => {
                 props.toggleBackground ? "bg-[#facc15]" : ""
             } z-10`}
             >
-            <p
-                className={` uppercase text-9xl font-extrabold absolute left-[60%] md:left-[50%] lg:left-[40%] xl:left-[68%] top-[20%]  ${
-                animate ? "animate" : ""
-                }`}
-            >
-                ab <br />
-                out
-                <span
-                className={`${
-                    props.toggleBackground ? "text-[#facc15]" : "text-white"
-                }`}
-                >
-                .
-                </span>
-            </p>
-            </div>
-            <div
-            className={`relative flex-col justify-center items-start flex`}
-                >
-            <p className=" uppercase font-bold absolute flex flex-col items-start lg:ml-[30rem] xl:ml-[32rem] mb-[38rem] px-20">
-                <span className="text-2xl ml-1">
-                hi{" "}
-                <span
-                    className={`${
-                    props.toggleBackground ? "text-[#facc15]" : "text-white"
+                <p
+                    className={` uppercase text-9xl font-extrabold absolute left-[60%] md:left-[50%] lg:left-[40%] xl:left-[68%] top-[20%]  ${
+                    animate ? "animate" : ""
                     }`}
                 >
-                    ,
-                </span>{" "}
-                i am
-                </span>
-                <br />
-                <span className="text-6xl w-full">mohamed mousa</span>
-                <br />
-                <span className="text-2xl ml-1">frontend developer</span>
-            </p>
+                    ab <br />
+                    out
+                    <span
+                    className={`${
+                        props.toggleBackground ? "text-[#facc15]" : "text-[#facc15]"
+                    }`}
+                    >
+                    .
+                    </span>
+                </p>
             </div>
+                <div
+                className={` relative flex-col justify-center items-start flex bg-blue-700`}
+                    >
+                <p className=" uppercase font-bold absolute flex flex-col items-start lg:ml-[30rem] xl:ml-[32rem] mb-[38rem] px-20">
+                    <span className="text-2xl ml-1">
+                    hi{" "}
+                    <span
+                        className={`${
+                        props.toggleBackground ? "text-[#facc15]" : "text-white"
+                        }`}
+                    >
+                        ,
+                    </span>{" "}
+                    i am
+                    </span>
+                    <br />
+                    <span className="text-6xl w-full">mohamed mousa</span>
+                    <br />
+                    <span className="text-2xl ml-1">frontend developer</span>
+                </p>
+                </div>
             </div>
         
             {/* bio */}
