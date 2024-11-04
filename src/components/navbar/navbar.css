@@ -25,3 +25,9 @@
 .toggleBcakground_ball.dark {
   transform: translateX(100%);
 }
+
+@media (max-width: 380px) {
+  .toggleBcakground{
+    margin-right: -15px;
+  }
+}

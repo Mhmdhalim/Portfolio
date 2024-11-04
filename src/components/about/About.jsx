@@ -55,11 +55,9 @@ const About = (props) => {
                     >
                 <p className=" uppercase font-bold absolute flex flex-col items-start lg:ml-[30rem] xl:ml-[32rem] mb-[38rem] px-20">
                     <span className="text-2xl ml-1">
-                    hi{" "}
+                    hi
                     <span
-                        className={`${
-                        props.toggleBackground ? "text-[#facc15]" : "text-white"
-                        }`}
+                        className={`text-[#facc15]`}
                     >
                         ,
                     </span>{" "}
@@ -79,11 +77,9 @@ const About = (props) => {
                     <h1 className="uppercase font-bold text-4xl py-4">about<span className={`${props.toggleBackground ? "text-[#facc15]" : "text-white"}`}>.</span></h1>
                     <p className="uppercase font-bold text-sm ">
                         <span className="">
-                        hi{" "}
+                        hi
                         <span
-                        className={` ${
-                            props.toggleBackground ? "text-[#facc15]" : "text-white"
-                        }`}
+                        className={` text-[#facc15]`}
                         >
                         ,
                         </span>
@@ -99,17 +95,13 @@ const About = (props) => {
                     <h2 className="uppercase font-bold text-2xl pb-4">
                     hello
                     <span
-                        className={`${
-                        props.toggleBackground ? "text-[#facc15]" : "text-white"
-                        }`}
+                        className={`text-[#facc15]`}
                     >
                     ,{" "}
                     </span>
                     world{" "}
                     <span
-                        className={`${
-                        props.toggleBackground ? "text-[#facc15]" : "text-white"
-                        }`}
+                        className={`text-[#facc15]`}
                     >
                         !
                     </span>

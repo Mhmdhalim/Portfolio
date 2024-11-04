@@ -75,5 +75,22 @@ body.active {
     flex-direction: column;
     width: 100%;
     height: auto;
+    justify-content: center;
+    align-items: center;
   }
+  
+}
+@media (max-width: 380px) {
+
+  .app,
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 105%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
 }
