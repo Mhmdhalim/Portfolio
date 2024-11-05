@@ -18,7 +18,7 @@
         "skills": [
             "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
             "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
-            "https://img.shields.io/badge/scss-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+            "https://img.shields.io/badge/scss-red?style=for-the-badge&logo=tailwind-css&logoColor=white"
         ],
         "repoLink": "https://github.com/Mhmdhalim/ToDo",
         "demoLink": "https://ttodoooo.netlify.app/"
@@ -28,9 +28,9 @@
         "description": "Personalized advice and insights to inspire and empower users.",
         "img": "./assets/app.jpeg",
         "skills": [
-            "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
-            "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
-            "https://img.shields.io/badge/scss-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+            "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white",
+            "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E",
+            "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
         ],
         "repoLink": "https://github.com/Mhmdhalim/Frontend/tree/main/Advice-Generator",
         "demoLink": "https://mhmdhalim.github.io/Frontend/Advice-Generator/"
