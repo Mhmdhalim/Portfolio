@@ -12,27 +12,27 @@
         "demoLink": "https://bigcommercee.netlify.app/"
     },
     {
-        "title": "Weather App",
-        "description": "A weather application using a weather API",
-        "img": "./assets/E.png",
+        "title": "ToDo App",
+        "description": "Stylish to-do app for effortless task organization and productivity",
+        "img": "./assets/ToDo.jpeg",
         "skills": [
             "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
             "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
             "https://img.shields.io/badge/scss-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
         ],
-        "repoLink": "repo link",
-        "demoLink": "demo link"
+        "repoLink": "https://github.com/Mhmdhalim/ToDo",
+        "demoLink": "https://ttodoooo.netlify.app/"
     },
     {
-        "title": "Tic-tac-toe App",
-        "description": "A classic tic-tac-toe game",
-        "img": "./assets/E.png",
+        "title": "Advice Generator App",
+        "description": "Personalized advice and insights to inspire and empower users.",
+        "img": "./assets/app.jpeg",
         "skills": [
             "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
             "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
             "https://img.shields.io/badge/scss-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
         ],
-        "repoLink": "repo link",
-        "demoLink": "demo link"
+        "repoLink": "https://github.com/Mhmdhalim/Frontend/tree/main/Advice-Generator",
+        "demoLink": "https://mhmdhalim.github.io/Frontend/Advice-Generator/"
     }
 ]

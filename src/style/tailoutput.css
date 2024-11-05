@@ -745,18 +745,6 @@ video {
   width: 100%;
 }
 
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-3\/4 {
-  width: 75%;
-}
-
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -869,19 +857,14 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-500 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-10 {
@@ -948,6 +931,10 @@ video {
 
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-right {
@@ -1053,19 +1040,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
-}
-
-.text-\[\#fac\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 170 204 / var(--tw-text-opacity));
-}
-
-.text-\[\#facc\] {
-  color: #facc;
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -1125,6 +1099,10 @@ video {
     position: relative;
   }
 
+  .md\:left-36 {
+    left: 9rem;
+  }
+
   .md\:left-\[50\%\] {
     left: 50%;
   }
@@ -1139,10 +1117,6 @@ video {
 
   .md\:top-\[12rem\] {
     top: 12rem;
-  }
-
-  .md\:left-36 {
-    left: 9rem;
   }
 
   .md\:mb-16 {
@@ -1199,8 +1173,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:left-36 {
-    left: 9rem;
+  .lg\:left-40 {
+    left: 10rem;
   }
 
   .lg\:left-\[40\%\] {
@@ -1215,18 +1189,6 @@ video {
     top: 12rem;
   }
 
-  .lg\:left-32 {
-    left: 8rem;
-  }
-
-  .lg\:left-48 {
-    left: 12rem;
-  }
-
-  .lg\:left-40 {
-    left: 10rem;
-  }
-
   .lg\:ml-\[30rem\] {
     margin-left: 30rem;
   }
@@ -1235,21 +1197,12 @@ video {
     display: block;
   }
 
-  .lg\:flex {
-    display: flex;
-  }
-
   .lg\:grid {
     display: grid;
   }
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .lg\:py-3 {

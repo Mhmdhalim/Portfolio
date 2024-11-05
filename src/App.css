@@ -80,17 +80,52 @@ body.active {
   }
   
 }
+
+/* Extra-small screens */
 @media (max-width: 380px) {
 
   .app,
   body {
     display: flex;
     flex-direction: column;
-    width: 105%;
+    width: 100%;
     height: auto;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
   }
-  
+
+  header,
+  footer {
+    padding: 0.5rem;
+    /* Reduced padding for smaller screens */
+    text-align: center;
+    /* Center text for better visibility */
+  }
+
+  .w-full {
+    width: 95%;
+    /* Adjust width to prevent overflow */
+    padding: 1rem;
+    /* Increased padding for better spacing */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 1.5rem;
+    /* Decrease font sizes for headings */
+  }
+
+  p {
+    font-size: 0.875rem;
+    /* Decrease font sizes for paragraphs */
+  }
+
+  .absolute {
+    top: 20px;
+    /* Adjust position of Colores component */
+    right: 10px;
+    /* Adjust position of Colores component */
+  }
 }

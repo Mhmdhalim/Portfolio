@@ -3,6 +3,8 @@ import "./portfolio.css";
 import { FaGithub, FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Import arrow icons
 import data from "./data.json";
 import img1 from "./assets/E.png";
+import img2 from "./assets/ToDo.jpeg";
+import img3 from "./assets/app.jpeg";
 import iconblack from "./assets/e875fb0a158ceec2b831.png"
 import iconwhite from "./assets/ef74e2761c3898237855.png"
 
@@ -34,8 +36,8 @@ const Portfolio = (props) => {
                     <img
                         src={
                         (currentIndex === 0 && img1) ||
-                        (currentIndex === 1 && img1) ||
-                        (currentIndex === 2 && img1)
+                        (currentIndex === 1 && img2) ||
+                        (currentIndex === 2 && img3)
                         }
                         alt={currentProject.title}
                         className={`w-[66%] md:w-[62%] image_class mt-12 ${!props.toggleBackground ? "active" : ""}`}
@@ -128,8 +130,8 @@ const Portfolio = (props) => {
                                 <img
                                     src={
                                     (index === 0 && img1) ||
-                                    (index === 1 && img1) ||
-                                    (index === 2 && img1)
+                                    (index === 1 && img2) ||
+                                    (index === 2 && img3)
                                     }
                                     alt={project.title}
                                     className={`w-full image_class mt-12 ${!props.toggleBackground ? "active" : ""}`}
@@ -139,7 +141,7 @@ const Portfolio = (props) => {
                                 </span>
                             </div>
                             <h1 className="text-xl font-bold ">{project.title}</h1>
-                            <p className="text-sm font-bold ">{project.description}</p>
+                            <p className="text-sm font-bold text-center">{project.description}</p>
                             <div className="flex justify-center items-center w-full py-2">
                                 {
                                 project.skills.map(skill => <img src={skill} alt="" className="h-6" />)
