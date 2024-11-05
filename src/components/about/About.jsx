@@ -81,7 +81,7 @@ const About = (props) => {
                         <span
                         className={` text-[#facc15]`}
                         >
-                        ,
+                        ,{" "}
                         </span>
                         i am
                         </span>
@@ -109,7 +109,7 @@ const About = (props) => {
                     <p className="text-[14px] text-justify " style={{textWrap: "pretty"}}>
                     As an enthusiastic web developer with a passion for coding and
                     problem-solving, I have honed my skills through rigorous online
-                    courses such as Harvard's CS50x and The Odin Project. Though I am
+                    courses such as Harvard's CS50x, CS50p, CS50W and some courses. Though I am
                     at the beginning of my professional journey, these comprehensive
                     programs have equipped me with a solid foundation in HTML, CSS,
                     JavaScript, and various modern web development frameworks. My
@@ -129,7 +129,6 @@ const About = (props) => {
                             <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="" />
                             <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" alt="" srcset="" />
                             <img src="https://img.shields.io/badge/C++-gray?style=for-the-badge&logo=CPLUSPLUS&logoColor=blue" alt="" srcset="" />
-        
                         </div>
                         <div className="frontend flex flex-wrap">
                             <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="" srcset="" />
