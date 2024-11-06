@@ -121,11 +121,11 @@ const Portfolio = (props) => {
             </div>
             </div>
             {/* in small screen */}
-            <div className="py-7 lg:hidden flex flex-col justify-center items-center pt-16 md:pt-20 md:justify-start md:items-center md:flex-row md:gap-7 md:flex-wrap md:relative md:h-[1000px]">
+            <div className="py-7 lg:hidden flex flex-col justify-center items-center pt-44 md:pt-20 md:justify-start md:items-center md:flex-row md:gap-7 md:flex-wrap md:relative md:h-[1000px]">
                 <h1 className="head_project uppercase text-3xl font-bold self-start md:absolute md:text-left md:w-full md:top-16 ">projects<span className={`${props.toggleBackground ? "text-[#0ea5e9]" : "text-white"}`}>.</span></h1>
                 {
                     data.map((project, index) => (
-                        <div className="flex flex-col w-[360px] justify-center items-center text-justify" style={{textWrap: "pretty"}}>
+                        <div className="flex flex-col w-[300px] justify-center items-center text-justify" style={{textWrap: "pretty"}}>
                             <div className="flex justify-center items-center relative image-container mb-4 md:mb-16 ">
                                 <img
                                     src={
@@ -140,7 +140,7 @@ const Portfolio = (props) => {
                                     0{index + 1}
                                 </span>
                             </div>
-                            <h1 className="text-xl font-bold ">{project.title}</h1>
+                            <h1 className="text-xl font-bold text-center ">{project.title}</h1>
                             <p className="text-sm font-bold text-center">{project.description}</p>
                             <div className="flex justify-center items-center w-full py-2">
                                 {
@@ -176,8 +176,8 @@ const Portfolio = (props) => {
                         
                     ))
                 }
-               
-            </div>   <div className="flex items-center justify-center gap-2 uppercase font-bold text-lg">
+            </div>
+            <div className="flex items-center justify-center gap-2 uppercase font-bold text-lg">
                 More on{" "}
                 <a href="https://github.com" className=" underline hover:scale-110 transition-all duration-300 ease-linear">
                     GitHub

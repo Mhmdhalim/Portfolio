@@ -72,7 +72,7 @@ const About = (props) => {
             </div>
         
             {/* bio */}
-            <div className={`flex flex-col bio w-[360px] sm:w-[500px] md:w-[730px] ${show ? "active mt-16" : "right:500px"}`}>
+            <div className={`flex flex-col bio w-[350px] sm:w-[500px] md:w-[730px] ${show ? "active mt-16" : "right:500px"}`}>
                 <div className={` first_section py-4 ${show ? "hidden  " : ""}`}>
                     <h1 className="uppercase font-bold text-4xl py-4">about<span className={`${props.toggleBackground ? "text-[#facc15]" : "text-white"}`}>.</span></h1>
                     <p className="uppercase font-bold text-sm ">
@@ -86,12 +86,12 @@ const About = (props) => {
                         i am
                         </span>
                         <br />
-                        <span className="text-3xl pr-2">Mohamed Mousa</span>
+                        <span className="text-2xl pr-2">Mohamed Mousa</span>
                         <br />
                         <span>frontend developer</span>
                     </p>
                 </div>
-                <div className="sec_section py-8 border-y-2 border-[#facc15] w-[95%]">
+                <div className="sec_section py-8 border-y-2 border-[#facc15] w-[80%] sm:w-[95%]">
                     <h2 className="uppercase font-bold text-2xl pb-4">
                     hello
                     <span

@@ -28,7 +28,7 @@
 
 @media (max-width: 500px) {
     .box_hello p{
-        left: 50%;
+        left: 42%;
         font-size: 100px;
     }
 }

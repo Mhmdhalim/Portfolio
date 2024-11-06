@@ -88,10 +88,11 @@ body.active {
   body {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 400px;
     height: auto;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
   }
 
   header,
