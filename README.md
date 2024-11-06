@@ -13,7 +13,7 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 - [Contact](#contact)
 
 ## Demo
-You can view a live demo of the portfolio (https://portfoliooom.netlify.app/)[https://portfoliooom.netlify.app/].
+You can view a live demo of the portfolio [here](https://portfoliooom.netlify.app).
 
 ## Features
 - **Dynamic Project Showcase**: View one project at a time with navigation buttons to move to the next or previous project.
