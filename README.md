@@ -66,5 +66,5 @@ To customize this portfolio app:
 
 ## Contact
 Feel free to reach out if you have any questions or feedback!
-- **Email**: your-email@example.com
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourusername)
+- **Email**: mohamed2halim@gmail.com
+- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/mohamed-mousa-3b7157201)
