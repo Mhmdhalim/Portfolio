@@ -30,5 +30,13 @@
     .box_hello p{
         left: 42%;
         font-size: 100px;
+        top: 30%;
     }
+}
+
+@media (max-width: 376px) {
+   header{
+    margin-right: 30px;
+   }
+   
 }

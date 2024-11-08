@@ -37,7 +37,7 @@ const App = () => {
         <Colores />
       </div>
 
-      <div className="w-full mt-16 p-7">
+      <div className=" mt-16 p-7">
         <Hello toggleBackground={background} />
         <About toggleBackground={background} />
         <Portfolio toggleBackground={background} />

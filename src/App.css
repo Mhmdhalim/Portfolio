@@ -88,11 +88,12 @@ body.active {
   body {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 379px;
     height: auto;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    padding: 0;
   }
 
   header,
